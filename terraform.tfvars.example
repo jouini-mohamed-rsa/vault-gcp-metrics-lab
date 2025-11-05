@@ -1,0 +1,29 @@
+# Example terraform.tfvars file
+# Copy this to the appropriate folder (1-infrastructure or 2-monitoring) and update with your values
+
+# ========================================
+# 1-infrastructure/terraform.tfvars
+# ========================================
+#
+# project_id = "your-gcp-project-id"
+# region     = "us-central1"
+# zone       = "us-central1-a"
+#
+# instance_name = "vault-poc-instance"
+# machine_type  = "e2-medium"
+# vault_version = "1.20.4"
+#
+# # IMPORTANT: Restrict to your IP for security!
+# # Find your IP: https://whatismyipaddress.com/
+# allowed_cidrs = ["YOUR_IP/32"]
+
+# ========================================
+# 2-monitoring/terraform.tfvars
+# ========================================
+#
+# project_id = "your-gcp-project-id"  # Same as infrastructure
+# region     = "us-central1"
+#
+# # These must match your infrastructure deployment
+# instance_name = "vault-poc-instance"
+# instance_zone = "us-central1-a"
