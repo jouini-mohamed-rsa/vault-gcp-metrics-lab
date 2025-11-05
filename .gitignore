@@ -3,6 +3,7 @@
 
 # Local .terraform directories
 **/.terraform/*
+# Note: .terraform.lock.hcl should be committed (removed from ignore list)
 
 # Terraform state files
 *.tfstate
